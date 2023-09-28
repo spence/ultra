@@ -92,7 +92,7 @@ export async function createServer<
 
   if (mode === "development") {
     log.info("Loading compiler");
-    const { compiler } = await import("./middleware/compiler.ts");
+    const { compiler } = await import("gh/spence/ultra/lib/middleware/compiler.ts");
 
     // deno-fmt-ignore
     server.get(`${ULTRA_COMPILER_PATH}/*`, compiler({

@@ -76,7 +76,7 @@ export class UltraBuilder extends Builder {
       .ignore(makeRelative(root, Deno.mainModule))
       .ignore(options.ignored || [])
       .dynamicImportIgnore([
-        import.meta.resolve("../middleware/compiler.ts"),
+        import.meta.resolve("gh/spence/ultra/lib/middleware/compiler.ts"),
       ])
       .contentHash([
         "./src/**/*.+(ts|tsx|js|jsx|css)",
