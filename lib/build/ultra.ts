@@ -20,6 +20,7 @@ import type {
   DenoConfig,
   PatternLike,
 } from "./types.ts";
+import { VERSION } from "../../version.ts"
 
 type DefaultBuildOptions = Omit<
   BuildOptions,
@@ -76,7 +77,7 @@ export class UltraBuilder extends Builder {
       .ignore(makeRelative(root, Deno.mainModule))
       .ignore(options.ignored || [])
       .dynamicImportIgnore([
-        import.meta.resolve("gh/spence/ultra/lib/middleware/compiler.ts"),
+        import.meta.resolve(`https://esm.sh/gh/spence/ultra@v${VERSION}/lib/middleware/compiler.ts`),
       ])
       .contentHash([
         "./src/**/*.+(ts|tsx|js|jsx|css)",
