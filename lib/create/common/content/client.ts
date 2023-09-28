@@ -7,7 +7,7 @@ export function clientContent(config: Config) {
   const ext = fileExtension(config);
 
   return `
-import hydrate from "ultra/hydrate.js";
+import hydrate from "gh/spence/ultra/hydrate.js";
 import App from "${ext("./src/app", true)}";
 
 ${

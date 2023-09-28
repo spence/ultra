@@ -1,5 +1,5 @@
 import { dehydrate, QueryClient } from "@tanstack/react-query";
-import useServerInsertedHTML from "ultra/hooks/use-server-inserted-html.js";
+import useServerInsertedHTML from "../../../hooks/use-server-inserted-html.js";
 
 export const queryClient = new QueryClient({
   defaultOptions: {

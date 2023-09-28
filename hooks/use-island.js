@@ -1,7 +1,7 @@
 /// <reference types="./use-island.d.ts" />
 import { createElement as h, Fragment, useContext } from "react";
 import IslandContext from "./island-context.js";
-import "ultra/hooks/island-hydrator.js";
+import "./island-hydrator.js";
 
 export default function useIsland(Component) {
   const name = Component.displayName || Component.name;

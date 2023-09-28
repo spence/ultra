@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import useAsset from "ultra/hooks/use-asset.js";
+import useAsset from "../../../hooks/use-asset.js";
 import Post from "./components/Post.tsx";
 
 const LazyPost = lazy(() => import("./components/Post.tsx"));

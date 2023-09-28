@@ -4,7 +4,7 @@ import { Config } from "../config.ts";
 export function buildContent(config: Config) {
   const ext = fileExtension(config);
   return `
-  import { createBuilder } from "ultra/build.ts";
+  import { createBuilder } from "gh/spence/ultra/build.ts";
 
 const builder = createBuilder({
   browserEntrypoint: import.meta.resolve("${ext("./client", true)}"),

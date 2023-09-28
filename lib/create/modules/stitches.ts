@@ -43,7 +43,7 @@ export const {
 export function stitchesProviderContent(config: Config) {
   return `
 ${config.ts ? 'import { PropsWithChildren } from "react";' : ""}
-import useServerInsertedHTML from "ultra/hooks/use-server-inserted-html.js";
+import useServerInsertedHTML from "gh/spence/ultra/hooks/use-server-inserted-html.js";
 import { getCssText } from "./stitches.config${config.ts ? ".ts" : ".js"}";
 
 export function StitchesProvider({ children }${

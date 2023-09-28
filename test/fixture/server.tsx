@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std@0.176.0/http/server.ts";
-import { createServer } from "ultra/server.ts";
+import { createServer } from "../../server.ts";
 import App from "./src/app.tsx";
 import { queryClient } from "./src/query-client.tsx";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";

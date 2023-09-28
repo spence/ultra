@@ -1,4 +1,4 @@
-import hydrate from "ultra/hydrate.js";
+import hydrate from "../../hydrate.js";
 
 hydrate(
   document,

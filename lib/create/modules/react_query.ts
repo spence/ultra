@@ -19,7 +19,7 @@ export function useDehydrateReactQueryContent(config: Config) {
 import { dehydrate${
     config.ts ? ", QueryClient" : ""
   } } from "@tanstack/react-query";
-import useServerInsertedHTML from "ultra/hooks/use-server-inserted-html.js";
+import useServerInsertedHTML from "gh/spence/ultra/hooks/use-server-inserted-html.js";
 
 export function useDehydrateReactQuery(queryClient${
     config.ts ? ": QueryClient" : ""

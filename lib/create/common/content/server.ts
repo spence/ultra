@@ -10,12 +10,12 @@ export function serverContent(config: Config) {
 import { serve } from "https://deno.land/std@0.176.0/http/server.ts";
 import { createServer ${
     config.ts ? ", type Context" : ""
-  } } from "ultra/server.ts";
+  } } from "gh/spence/ultra/server.ts";
 import App from "${ext("./src/app", true)}";
 
 ${
     p.twind(`// Twind
-import { createHeadInsertionTransformStream } from "ultra/stream.ts";
+import { createHeadInsertionTransformStream } from "gh/spence/ultra/stream.ts";
 import { stringify, tw } from "./src/twind/twind.ts";
 `)
   }
@@ -37,7 +37,7 @@ import { SearchParamsProvider } from "${ext("./src/wouter/index", true)}";
 ${
     p.reactHelmetAsync(`// React Helmet Async
 import { HelmetProvider } from "react-helmet-async";
-import useServerInsertedHTML from "ultra/hooks/use-server-inserted-html.js";
+import useServerInsertedHTML from "gh/spence/ultra/hooks/use-server-inserted-html.js";
 `)
   }
 

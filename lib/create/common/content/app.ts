@@ -7,7 +7,7 @@ export function appContent(config: Config) {
   const ext = fileExtension(config);
   // deno-fmt-ignore
   return`
-  import useAsset from "ultra/hooks/use-asset.js";
+  import useAsset from "gh/spence/ultra/hooks/use-asset.js";
   ${p.twind(`// Twind
   import { tw } from "./twind/twind.ts";
   `)}
